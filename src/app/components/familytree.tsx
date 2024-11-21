@@ -254,6 +254,14 @@ const FamilyTree: React.FC = () => {
                     <SelectItem value="generation2">Generation 2</SelectItem>
                     <SelectItem value="generation3">Generation 3</SelectItem>
                     <SelectItem value="generation4">Generation 4</SelectItem>
+                    <SelectItem value="generation5">Generation 5</SelectItem>
+                    <SelectItem value="generation6">Generation 6</SelectItem>
+                    <SelectItem value="generation7">Generation 7</SelectItem>
+                    <SelectItem value="generation8">Generation 8</SelectItem>
+                    <SelectItem value="generation9">Generation 9</SelectItem>
+                    <SelectItem value="generatio10">Generation 10</SelectItem>
+                    <SelectItem value="generation11">Generation 11</SelectItem>
+                    <SelectItem value="generation12">Generation 12</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
