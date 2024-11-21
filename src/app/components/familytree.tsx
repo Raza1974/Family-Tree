@@ -163,10 +163,10 @@ const FamilyTree: React.FC = () => {
     <div className="min-h-screen p-8 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-3xl font-bold text-blue-600">Family Tree</h1>
+          <h1 className="text-3xl font-bold text-blue-600">Main  Menu</h1>
           <div className="space-x-4">
             <Button onClick={() => setIsAddingMember(true)} className="text-white bg-blue-600 hover:bg-blue-700">
-              <Plus className="w-4 h-4 mr-2" />
+              <Plus className="w-4 h-2 mr-16" />
               Add Member
             </Button>
             <Button onClick={handleDownloadData} className="text-white bg-green-600 hover:bg-green-700">
