@@ -212,7 +212,7 @@ const FamilyTree: React.FC = () => {
             <DialogHeader>
               <DialogTitle className="text-blue-600">Add Family Member</DialogTitle>
             </DialogHeader>
-            <form onSubmit={handleAddMember} className="space-y-4">
+            <form onSubmit={handleAddMember} className="space-y-12">
               <div>
                 <Label htmlFor="name">Name</Label>
                 <Input
@@ -243,27 +243,27 @@ const FamilyTree: React.FC = () => {
               <div>
                 <Label htmlFor="generation">Generation</Label>
                 <Select
-                  value={newMember.generation}
-                  onValueChange={(value) => setNewMember({ ...newMember, generation: value })}
-                >
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select a generation" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="generation1">Generation 1</SelectItem>
-                    <SelectItem value="generation2">Generation 2</SelectItem>
-                    <SelectItem value="generation3">Generation 3</SelectItem>
-                    <SelectItem value="generation4">Generation 4</SelectItem>
-                    <SelectItem value="generation5">Generation 5</SelectItem>
-                    <SelectItem value="generation6">Generation 6</SelectItem>
-                    <SelectItem value="generation7">Generation 7</SelectItem>
-                    <SelectItem value="generation8">Generation 8</SelectItem>
-                    <SelectItem value="generation9">Generation 9</SelectItem>
-                    <SelectItem value="generatio10">Generation 10</SelectItem>
-                    <SelectItem value="generation11">Generation 11</SelectItem>
-                    <SelectItem value="generation12">Generation 12</SelectItem>
-                  </SelectContent>
-                </Select>
+  value={newMember.generation}
+  onValueChange={(value) => setNewMember({ ...newMember, generation: value })}
+>
+<SelectTrigger className="w-full p-2 font-bold border-2 border-red-500">
+  <SelectValue placeholder="Select a generation" />
+</SelectTrigger>
+<SelectContent className="overflow-auto max-h-100">
+    <SelectItem value="generation1" className="font-bold text-blue-600">Generation 1</SelectItem>
+    <SelectItem value="generation2" className="font-bold text-green-600">Generation 2</SelectItem>
+    <SelectItem value="generation3" className="font-bold text-purple-600">Generation 3</SelectItem>
+    <SelectItem value="generation4" className="font-bold text-red-600">Generation 4</SelectItem>
+    <SelectItem value="generation5" className="font-bold text-yellow-600">Generation 5</SelectItem>
+    <SelectItem value="generation6" className="font-bold text-orange-600">Generation 6</SelectItem>
+    <SelectItem value="generation7" className="font-bold text-teal-600">Generation 7</SelectItem>
+    <SelectItem value="generation8" className="font-bold text-indigo-600">Generation 8</SelectItem>
+    <SelectItem value="generation9" className="font-bold text-pink-600">Generation 9</SelectItem>
+  </SelectContent>
+
+
+</Select>
+
               </div>
               <div className="flex justify-end space-x-4">
                 <Button onClick={() => setIsAddingMember(false)} type="button" variant="secondary">
